@@ -85,24 +85,26 @@
                     <button class="btn bg-[#894189] text-white text-lg rounded-full border-none">
                         Life
                         <img src="images/heart.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
                     <button class="btn bg-[#360490] text-white text-lg rounded-full border-none">
                         Score
                         <img src="images/monetization.svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                     </button>
                 </div>
             </div>
         </section>
-        <section id="score" class="hidden">
+        <!-- Final Score -->
+        <section id="final-score" class="hidden">
             <div class="flex flex-col justify-center items-center min-h-screen">
                 <div class=" bg-[#FFFFFF26] text-center space-y-5 p-5">
+                    <h3 class="text-5xl text-white font-medium">Game Over!!!</h3>
                     <h1 class="text-6xl text-white">
                         <span class="font-semibold">Score :</span>
-                        <span>14</span>
+                        <span id="last-score">0</span>
                     </h1>
-                    <button class="btn w-36 text-xl font-semibold">Play Again</button>
+                    <button onclick="play()" class="btn w-36 text-xl font-semibold">Play Again</button>
                     <p class="text-white text-xl font-medium">Practice will make you Pro</p>
                 </div>
             </div>
